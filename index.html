@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+    APARTADO HEAD
+    AQUI SE AÑADE EL TÍTULO DE LA PÁGINA WEB Y SE ENLAZA CON LOS DOCUMENTOS CSS Y JS, ASÍ COMO CON LA LIBRERIA JQUERY
+-->
+
+<head>
+    <meta charset="utf-8">
+    <title>PAC de Desarrollo - Diseño de Interfaces Web</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/javascript.js"></script>
+
+</head>
+
+<!--
+    EMPIEZA EL BODY
+-->
+
+<body>
+    <div class="back">
+
+        <!--
+    EN ESTE PRIMER BLOQUE, APARECEN LOS BOTONES 
+    "PONER ADORNO" Y "MOVER ARBOL". A SU VEZ, ELLOS
+    LLAMAN A DOS FUNCIONES DISTINTAS, QUE ESTÁN 
+    DESARROLLADAS EN EL DOCUMENTO JS/JAVASCRIPT.JS
+-->
+
+        <header>
+            <button type="button" id="Poner" onclick="appear()">Poner Adorno</button>
+            <button type="button" id="Quitar" onclick="quit()">Mover Árbol</button>
+            <div class="contadores"><br>
+                <div id="Contar1">Bolas creadas: </div>
+                <div id="Contar2">Eliminadas: </div>
+            </div>
+        </header>
+
+        <!--
+    EN ESTE SEGUNDO BLOQUE, APARECE LA IMAGEN DEL
+    ARBOL Y LOS ADORNOS
+-->
+
+        <section>
+            <div class="image">
+                <div id="adornos">
+                    <div class="adorno" id="adorno1"></div>
+                </div>
+                <img src="tree.png" id="arbol">
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
